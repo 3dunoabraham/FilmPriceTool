@@ -4,6 +4,10 @@
 	<title>Abraham Duno</title>
 	<meta charset="utf-8">
 
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
 
 	<style type="text/css">
 		body, html {
@@ -85,7 +89,8 @@
 
 
 	<!-- <script src="fontawesome-all.js"></script> -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Mulish:wght@200&family=Roboto:wght@100&display=swap" rel="stylesheet"> 
@@ -97,7 +102,7 @@
 		<h4 style="opacity: .5">Tabla de Precios</h4>
 
 		<div style="display: flex; width: 75%">
-			<span>1</span><h2 style="margin: 0; padding-bottom: 25px">Foto</h2>
+			<span>1</span><h2 style="margin: 0; padding-bottom: 25px"><i class="fa fa-camera"></i> Foto</h2>
 			<span style="flex: 1"></span>
 			<h2 style="opacity: .5; margin: 0; padding-bottom: 25px" id="photo_type_prices_md">$</h2>
 		</div>
@@ -262,12 +267,12 @@
 				{
 					updateTotalAmount(event = null)
 					{
-						console.log("updateTotalAmount")
-						console.log(self.getTotalAmount())
+						// console.log("updateTotalAmount")
+						// console.log(self.getTotalAmount())
 						$('.total_title').html("Total: $"+self.getTotalAmount());
-						console.log(self.getTotalDesc())
+						// console.log(self.getTotalDesc())
 						$('.total_title_desc').html(self.getTotalDesc());
-						console.log("video_type_changed")
+						// console.log("video_type_changed")
 					},
 				};
 
@@ -330,7 +335,7 @@
 
 				for (var i = 0; i < this.data.sizes_array.length; i++)
 				{
-					console.log(this.data.sizes_array[i], this.data.video_type_amounts, parseInt(this.data.video_type_amounts[this.data.sizes_array[i]]))
+					// console.log(this.data.sizes_array[i], this.data.video_type_amounts, parseInt(this.data.video_type_amounts[this.data.sizes_array[i]]))
 					if (!parseInt(this.data.video_type_amounts[this.data.sizes_array[i]]))
 					{
 						continue
@@ -339,10 +344,10 @@
 				}
 
 				let photosValue = !this.data.photo_amount ? 0 : parseInt(this.data.photo_amount) * this.data.photo_type_prices.md
-				console.table({
-					totalAmount,
-					photosValue,
-				})
+				// console.table({
+				// 	totalAmount,
+				// 	photosValue,
+				// })
 
 				return totalAmount + photosValue + (parseInt(this.data.work_hour_price) * parseInt(this.data.work_hour_amount));
 			}
