@@ -102,25 +102,29 @@
 		<h4 style="opacity: .5">Tabla de Precios</h4>
 
 		<div style="display: flex; width: 75%">
-			<span>1</span><h2 style="margin: 0; padding-bottom: 25px"><i class="fa fa-camera"></i> Foto</h2>
+			<i style="opacity: .5" class="fa fa-xl fa-camera"></i>
+			<span>1</span><h2 style="margin: 0; padding-bottom: 25px"> Foto</h2>
 			<span style="flex: 1"></span>
 			<h2 style="opacity: .5; margin: 0; padding-bottom: 25px" id="photo_type_prices_md">$</h2>
 		</div>
 
 		<div style="display: flex; width: 75%">
-			<span>1</span><h2 style="margin: 0; padding-bottom: 25px">Video <small>(15-25 seg)</small> #SM</h2>
+			<i style="opacity: .5" class="fa fa-xl fa-video"></i>
+			<span>1</span><h2 style="margin: 0; padding-bottom: 25px"> Video <small>(15-25 seg)</small> #SM</h2>
 			<span style="flex: 1"></span>
 			<h2 style="opacity: .5; margin: 0; padding-bottom: 25px" id="video_type_prices_sm">$</h2>
 		</div>
 
 		<div style="display: flex; width: 75%">
-			<span>1</span><h2 style="margin: 0; padding-bottom: 25px">Video <small>(30-55 seg)</small> #MD</h2>
+			<i style="opacity: .5" class="fa fa-xl fa-video"></i>
+			<span>1</span><h2 style="margin: 0; padding-bottom: 25px"> Video <small>(30-55 seg)</small> #MD</h2>
 			<span style="flex: 1"></span>
 			<h2 style="opacity: .5; margin: 0; padding-bottom: 25px" id="video_type_prices_md">$</h2>
 		</div>
 
 		<div style="display: flex; width: 75%">
-			<span>1</span><h2 style="margin: 0; padding-bottom: 25px">Video <small>(60-90 seg)</small> #LG</h2>
+			<i style="opacity: .5" class="fa fa-xl fa-video"></i>
+			<span>1</span><h2 style="margin: 0; padding-bottom: 25px"> Video <small>(60-90 seg)</small> #LG</h2>
 			<span style="flex: 1"></span>
 			<h2 style="opacity: .5; margin: 0; padding-bottom: 25px" id="video_type_prices_lg">$</h2>
 		</div>
@@ -132,6 +136,7 @@
 		</div> -->
 
 		<div style="display: flex; width: 75%">
+			<i style="opacity: .5" class="fa fa-xl fa-user-clock"></i>
 			<h2 style="margin: 0; padding-bottom: 25px">Hora de Trabajo</h2>
 			<span style="flex: 1"></span>
 			<h2 style="opacity: .5; margin: 0; padding-bottom: 25px">$1-5</h2>
@@ -142,7 +147,7 @@
 		<div style="width: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center;">
 			<div style="width: 50%;">
 				<div style="display: flex; flex-direction: column; justify-content: center; align-items: center; width: 100%">
-					<h4 style="text-align: center; flex: 1; opacity: .5">Foto(s)</h4>
+					<h4 style="text-align: center; flex: 1; opacity: .5"><i class="fa fa-camera"></i> Foto(s)</h4>
 					<span></span>
 					<h3 style="text-align: center; flex: 1">
 						<input type="number" name="photo_amount" placeholder="0" value="" min="0"  data-watch="photo_amount_changed"  data-keyup
@@ -153,24 +158,24 @@
 			</div>
 			<div style="flex: 1; ">
 				<div style="display: flex; flex-direction: column; justify-content: center; align-items: center; width: 100%">
-					<h4 style="text-align: center; flex: 1; opacity: .5">Video(s)</h4>
+					<h4 style="text-align: center; flex: 1; opacity: .5"><i class="fa fa-video"></i> Video(s)</h4>
 					<span></span>
 					<h3 style="text-align: center; flex: 1; opacity: .5">
-						<label style="margin: 0 5px 0px 20px;">SM</label>
+						<label style="margin: 0 5px 0px 20px;">15-25s</label>
 						<input type="number" name="video_type_sm" value="0" min="0" data-watch="video_type_changed" data-keyup data-video_type_size="sm" placeholder="0" 
 						style="font-size: 35px; padding: 15px; background: rgba(0,0,0,.25); color: white; border: none; width: 100px;
 						margin-right: 20px; border-bottom: 1px solid rgb(127,127,127); text-align: center;">
 
 						<!-- <br> -->
 
-						<label style="margin: 0 5px 0px 20px">MD</label>
+						<label style="margin: 0 5px 0px 20px">30-55s</label>
 						<input type="number" name="video_type_md" value="0" min="0" data-watch="video_type_changed" data-keyup data-video_type_size="md" placeholder="0" 
 						style="font-size: 35px; padding: 15px; background: rgba(0,0,0,.25); color: white; border: none; width: 100px;
 						margin-right: 20px; border-bottom: 1px solid rgb(127,127,127); text-align: center;">
 
 						<!-- <br> -->
 
-						<label style="margin: 0 5px 0px 20px">LG</label>
+						<label style="margin: 0 5px 0px 20px">60-90s</label>
 						<input type="number" name="video_type_lg" value="0" min="0" data-watch="video_type_changed" data-keyup data-video_type_size="lg" placeholder="0" 
 						style="font-size: 35px; padding: 15px; background: rgba(0,0,0,.25); color: white; border: none; width: 100px;
 						margin-right: 20px; border-bottom: 1px solid rgb(127,127,127); text-align: center;">
@@ -194,6 +199,7 @@
 
 				<div style="width: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center;">
 					<h3 style="text-align: center; flex: 1; opacity: .5">
+						<i class="fa fa-user-clock"></i>
 						<label style="margin: 0 5px 0px 20px">Hora de Trabajo</label>
 						<span style="padding-right: 10px; margin-right: 10px"> </span>
 						<input type="number" name="work_hour_amount" value="1" min="1" data-watch="work_hour_amount_changed" data-keyup placeholder="1" 
