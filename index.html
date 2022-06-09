@@ -86,13 +86,13 @@
 
 	<!-- <script src="fontawesome-all.js"></script> -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"></script>
-	
+
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Mulish:wght@200&family=Roboto:wght@100&display=swap" rel="stylesheet"> 
 </head>
 <body>
 	<div class="container" id="templateViewId">
-		<h1>@tresduno</h1>
+		<h1><a href="https://instagram.com/tresduno" target="_blank" style="color: white">@tresduno</a></h1>
 		<hr style="width: 50%; opacity: .5">
 		<h4 style="opacity: .5">Tabla de Precios</h4>
 
@@ -103,13 +103,13 @@
 		</div>
 
 		<div style="display: flex; width: 75%">
-			<span>1</span><h2 style="margin: 0; padding-bottom: 25px">Video <small>(15-30 seg)</small> #SM</h2>
+			<span>1</span><h2 style="margin: 0; padding-bottom: 25px">Video <small>(15-25 seg)</small> #SM</h2>
 			<span style="flex: 1"></span>
 			<h2 style="opacity: .5; margin: 0; padding-bottom: 25px" id="video_type_prices_sm">$</h2>
 		</div>
 
 		<div style="display: flex; width: 75%">
-			<span>1</span><h2 style="margin: 0; padding-bottom: 25px">Video <small>(30-60 seg)</small> #MD</h2>
+			<span>1</span><h2 style="margin: 0; padding-bottom: 25px">Video <small>(30-55 seg)</small> #MD</h2>
 			<span style="flex: 1"></span>
 			<h2 style="opacity: .5; margin: 0; padding-bottom: 25px" id="video_type_prices_md">$</h2>
 		</div>
@@ -127,9 +127,9 @@
 		</div> -->
 
 		<div style="display: flex; width: 75%">
-			<h2 style="margin: 0; padding-bottom: 25px">Hora de Grabacion</h2>
+			<h2 style="margin: 0; padding-bottom: 25px">Hora de Trabajo</h2>
 			<span style="flex: 1"></span>
-			<h2 style="opacity: .5; margin: 0; padding-bottom: 25px">$2-5</h2>
+			<h2 style="opacity: .5; margin: 0; padding-bottom: 25px">$1-5</h2>
 		</div>
 
 		<h1>Orden</h1>
@@ -140,7 +140,7 @@
 					<h4 style="text-align: center; flex: 1; opacity: .5">Foto(s)</h4>
 					<span></span>
 					<h3 style="text-align: center; flex: 1">
-						<input type="number" name="photo_amount" placeholder="0" value="" min="0"  data-watch="photo_amount_changed" 
+						<input type="number" name="photo_amount" placeholder="0" value="" min="0"  data-watch="photo_amount_changed"  data-keyup
 						style="font-size: 35px; padding: 15px; background: rgba(0,0,0,.25); color: white; border: none; width: 50%;
 						border-bottom: 1px solid rgb(127,127,127); text-align: center;">
 					</h3>
@@ -152,21 +152,21 @@
 					<span></span>
 					<h3 style="text-align: center; flex: 1; opacity: .5">
 						<label style="margin: 0 5px 0px 20px;">SM</label>
-						<input type="number" name="video_type_sm" value="0" min="0" data-watch="video_type_changed" data-video_type_size="sm" placeholder="0" 
+						<input type="number" name="video_type_sm" value="0" min="0" data-watch="video_type_changed" data-keyup data-video_type_size="sm" placeholder="0" 
 						style="font-size: 35px; padding: 15px; background: rgba(0,0,0,.25); color: white; border: none; width: 100px;
 						margin-right: 20px; border-bottom: 1px solid rgb(127,127,127); text-align: center;">
 
 						<!-- <br> -->
 
 						<label style="margin: 0 5px 0px 20px">MD</label>
-						<input type="number" name="video_type_md" value="0" min="0" data-watch="video_type_changed" data-video_type_size="md" placeholder="0" 
+						<input type="number" name="video_type_md" value="0" min="0" data-watch="video_type_changed" data-keyup data-video_type_size="md" placeholder="0" 
 						style="font-size: 35px; padding: 15px; background: rgba(0,0,0,.25); color: white; border: none; width: 100px;
 						margin-right: 20px; border-bottom: 1px solid rgb(127,127,127); text-align: center;">
 
 						<!-- <br> -->
 
 						<label style="margin: 0 5px 0px 20px">LG</label>
-						<input type="number" name="video_type_lg" value="0" min="0" data-watch="video_type_changed" data-video_type_size="lg" placeholder="0" 
+						<input type="number" name="video_type_lg" value="0" min="0" data-watch="video_type_changed" data-keyup data-video_type_size="lg" placeholder="0" 
 						style="font-size: 35px; padding: 15px; background: rgba(0,0,0,.25); color: white; border: none; width: 100px;
 						margin-right: 20px; border-bottom: 1px solid rgb(127,127,127); text-align: center;">
 
@@ -178,7 +178,7 @@
 						<!-- <br> -->
 				</div>
 				<div style="width: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center;">
-					<h4 style="text-align: center; flex: 1; opacity: .5">Video description</h4>
+					<h4 style="text-align: center; flex: 1; opacity: .5">Info.</h4>
 					<span></span>
 					<h2 style="text-align: center;  width: 75%;">
 						<textarea name="desc" placeholder="Descripcion" value=""
@@ -190,16 +190,16 @@
 				<div style="width: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center;">
 					<h3 style="text-align: center; flex: 1; opacity: .5">
 						<label style="margin: 0 5px 0px 20px">Hora de Trabajo</label>
-						<small>$</small>
-						<input type="number" name="work_hour_price" value="0" min="0" data-watch="work_hour_price_changed" placeholder="0" 
-						style="font-size: 35px; padding: 15px; background: rgba(0,0,0,.25); color: white; border: none; width: 100px;
-						margin-right: 20px; border-bottom: 1px solid rgb(127,127,127); text-align: center;">
-						<span>x</span>
 						<span style="padding-right: 10px; margin-right: 10px"> </span>
-						<input type="number" name="work_hour_amount" value="0" min="0" data-watch="work_hour_amount_changed" placeholder="0" 
+						<input type="number" name="work_hour_amount" value="1" min="1" data-watch="work_hour_amount_changed" data-keyup placeholder="1" 
 						style="font-size: 35px; padding: 15px; background: rgba(0,0,0,.25); color: white; border: none; width: 100px;
 						margin-right: 20px; border-bottom: 1px solid rgb(127,127,127); text-align: center;">
 						<small>hrs</small>
+						<span>x</span>
+						<small>$</small>
+						<input type="number" name="work_hour_price" value="1" min="1" data-watch="work_hour_price_changed" data-keyup placeholder="1" 
+						style="font-size: 35px; padding: 15px; background: rgba(0,0,0,.25); color: white; border: none; width: 100px;
+						margin-right: 20px; border-bottom: 1px solid rgb(127,127,127); text-align: center;">
 					</h3>
 				<div style="width: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center;">
 			</div>
@@ -224,8 +224,8 @@
 				}, options);
 
 				this.data = Object.assign({
-					work_hour_price: 0,
-					work_hour_amount: 0,
+					work_hour_price: 1,
+					work_hour_amount: 1,
 					photo_amount: 0,
 					photo_type_prices: {
 						"sm": 1,
@@ -262,8 +262,12 @@
 				{
 					updateTotalAmount(event = null)
 					{
+						console.log("updateTotalAmount")
+						console.log(self.getTotalAmount())
 						$('.total_title').html("Total: $"+self.getTotalAmount());
+						console.log(self.getTotalDesc())
 						$('.total_title_desc').html(self.getTotalDesc());
+						console.log("video_type_changed")
 					},
 				};
 
@@ -302,6 +306,11 @@
 			{
 				let self = this;
 
+				$("[data-keyup]").keyup((event) =>
+				{
+					self.watchers[$(event.currentTarget).data('watch')] && self.watchers[$(event.currentTarget).data('watch')](event);
+				});
+
 				this.$container.on('change',"[data-watch]", function(event)
 				{
 					self.watchers[$(this).data('watch')](event);
@@ -311,6 +320,8 @@
 				{
 					self.clickers[$(this).data('click')](event);
 				});
+
+				this.updaters.updateTotalAmount()
 			}
 
 			getTotalAmount(event = null)
@@ -319,6 +330,7 @@
 
 				for (var i = 0; i < this.data.sizes_array.length; i++)
 				{
+					console.log(this.data.sizes_array[i], this.data.video_type_amounts, parseInt(this.data.video_type_amounts[this.data.sizes_array[i]]))
 					if (!parseInt(this.data.video_type_amounts[this.data.sizes_array[i]]))
 					{
 						continue
@@ -327,6 +339,10 @@
 				}
 
 				let photosValue = !this.data.photo_amount ? 0 : parseInt(this.data.photo_amount) * this.data.photo_type_prices.md
+				console.table({
+					totalAmount,
+					photosValue,
+				})
 
 				return totalAmount + photosValue + (parseInt(this.data.work_hour_price) * parseInt(this.data.work_hour_amount));
 			}
@@ -343,9 +359,20 @@
 				}
 
 				if (this.data.photo_amount == 0)
-					return totalDesc.substring(0, totalDesc.length - 2)
+				{
+					// totalDesc = totalDesc.substring(0, totalDesc.length - 2)
+				} else {
+					totalDesc += parseInt(this.data.photo_amount) + ` foto${(parseInt(this.data.photo_amount) == 1 ? '' : 's')} + `
+				}
+				// totalDesc = totalDesc.substring(0, totalDesc.length - 2)
 
-				return totalDesc + parseInt(this.data.photo_amount) + " Photos";
+				// if (this.data.work_hour_price > 0 && this.data.work_hour_amount > 0)
+				{
+					// totalDesc += " & "
+					totalDesc += `( ${parseInt(this.data.work_hour_amount)}hrs x $${parseInt(this.data.work_hour_price)} ($${this.data.work_hour_price*this.data.work_hour_amount}) )`
+				}
+
+				return totalDesc
 			}
 		}
 
