@@ -79,7 +79,7 @@
 			color: #feda35;
 			cursor: pointer;
     		text-decoration: none;
-    		padding: 0px 15px;
+    		padding: 0px 35px;
     		border-radius: 5px;
 		}
 		.header .button:hover {
@@ -177,7 +177,7 @@
 		<div class="nooverflow w-100">
 			<h1 class="tx-center">Producciones Audiovisuales</h1>
 
-			<div class="flex-wrap my-5 w-100">  
+			<div class="flex-wrap my-5 w-100" style="background: linear-gradient(-95deg, #00000000 5%, #00000077 8%, #00000000)">  
 				<iframe
 					width="806"
 					height="453"
@@ -207,7 +207,7 @@
 						allowfullscreen>
 					</iframe>
 				</div>
-				<div class="flex-wrap my-5">
+				<div class="flex-wrap my-5" style="background: linear-gradient(45deg, #00000000 5%, #00000077 8%, #00000000)">
 					<iframe
 						width="270"
 						height="480"
@@ -250,9 +250,10 @@
 					</div>
 				</div>
 			</div>
-			<div class="flex-wrap my-5 w-100">  
+			<div class="flex-wrap my-5 w-100" >   
 				<div class="flex-wrap my-5">
 					<iframe
+						class="ma-3"
 						width="270"
 						height="480"
 						src="https://www.youtube.com/embed/6BoOBPWZ2xQ"
@@ -262,6 +263,7 @@
 						allowfullscreen>
 					</iframe>
 					<iframe
+						class="ma-3"
 						width="270"
 						height="480"
 						src="https://www.youtube.com/embed/Izyqi27pCKE"
@@ -272,9 +274,10 @@
 					</iframe>
 				</div>
 			</div>
-			<div class="flex-column ">
+			<div class="flex-column " style="background: linear-gradient(-95deg, #00000000 5%, #00000077 8%, #00000000)">
 				<div class="flex-wrap my-5">
 					<iframe
+						class="ma-3"
 						width="560"
 						height="315"
 						src="https://www.youtube.com/embed/A_4ZpTIayC4"
@@ -284,6 +287,7 @@
 						allowfullscreen>
 					</iframe>
 					<iframe
+						class="ma-3"
 						width="560"
 						height="315"
 						src="https://www.youtube.com/embed/JAuNKqJG7uY"
@@ -304,7 +308,7 @@
 						allowfullscreen>
 					</iframe>
 					<iframe
-						class="ml-4"
+						class="ma-4"
 						width="560"
 						height="315"
 						src="https://www.youtube.com/embed/nWXMZcM-2xI"
@@ -314,7 +318,7 @@
 						allowfullscreen>
 					</iframe>
 					<iframe
-						class="ml-4"
+						class="ma-4"
 						width="560"
 						height="315"
 						src="https://www.youtube.com/embed/v3Z1EoxOXaU"
@@ -753,6 +757,8 @@
 		$(document).ready(function(){
 
 			jQuery("#gallery").unitegallery({
+				gallery_min_width: 450,				
+				tiles_col_width: 450,					
 			});
 
 			let newjQueryTemplateView = new jQueryTemplateView('#templateViewId', {
